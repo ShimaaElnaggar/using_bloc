@@ -18,23 +18,14 @@ final class EmployeeErrorState extends EmployeeState {
   EmployeeErrorState(this.errorMessage);
 }
 
-final class EmployeeAddingState extends EmployeeAddedState {
+final class EmployeeAddingState extends EmployeeAddedState {}
 
-}
+final class EmployeeAddingLoadingState extends EmployeeAddedState {}
 
-final class EmployeeAddingLoadingState extends EmployeeAddedState {
-
-
-}
-
-final class EmployeeAddingSuccessfulState extends EmployeeAddedState {
-
-
-}
+final class EmployeeAddingSuccessfulState extends EmployeeAddedState {}
 
 final class EmployeeAddingErrorState extends EmployeeAddedState {
   final String errorMessage;
 
   EmployeeAddingErrorState(this.errorMessage);
-
 }

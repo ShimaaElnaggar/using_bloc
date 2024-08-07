@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:using_bloc/models/employee.dart';
 
 class EmployeeRepository {
-  static List<Employee> employeesList = [] ;
+  static List<Employee> employeesList = [];
   Future<List<Employee>> getEmployees() async {
     try {
       var result = await rootBundle.loadString('assets/employees.json');
